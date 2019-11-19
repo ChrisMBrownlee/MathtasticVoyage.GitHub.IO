@@ -1,0 +1,31 @@
+﻿<Window x:Class="Mathtastic_Voyage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mathtastic_Voyage"
+        mc:Ignorable="d"
+        Title="Math Tester by Chris Brownlee" Height="450" Width="800">
+    <Grid>
+        <!-- Labels -->
+        <Label Name="LblMathProblems" Content="Math Problems" HorizontalAlignment="Left" Margin="62,40,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontSize="16"/>
+        <Label Name="LblCorrect" Content="Correct" HorizontalAlignment="Left" Margin="308,40,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontSize="16"/>
+        <Label Name="LblIncorrect" Content="Incorrect" HorizontalAlignment="Left" Margin="564,40,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontSize="16"/>
+        <Label Name="LblAnswer" Content="Answer" HorizontalAlignment="Left" Margin="62,301,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontSize="16"/>
+        <Label Name="LblShowProblem" Content="" HorizontalAlignment="Left" Margin="62,327,0,0" VerticalAlignment="Top" Width="170" FontFamily="Consolas"/>
+        <Label Name="LblScore" Content="Score" HorizontalAlignment="Left" Margin="564,301,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontSize="16"/>
+        <!-- List Boxes -->
+        <ListBox Name="LsbMathProblems" HorizontalAlignment="Left" Height="230" Margin="62,66,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False" SelectedIndex="0" FontFamily="Consolas"/>
+        <ListBox Name="LsbCorrect" HorizontalAlignment="Left" Height="230" Margin="308,66,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False" FontFamily="Consolas"/>
+        <ListBox Name="LsbIncorrect" HorizontalAlignment="Left" Height="230" Margin="564,66,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False" FontFamily="Consolas"/>
+        <!-- Text Box -->
+        <TextBox Name="TxtAnswer" HorizontalAlignment="Left" Height="26" Margin="232,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" FontFamily="Consolas" FontSize="16"/>
+        <TextBox Name="TxtScore" HorizontalAlignment="Left" Height="26" Margin="564,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" IsEnabled="False" FontFamily="Consolas" FontSize="16"/>
+        <!-- Buttons -->
+        <Button Name="BtnSubmit" Content="Submit Answer" HorizontalAlignment="Left" Margin="308,326,0,0" VerticalAlignment="Top" Width="200" Height="27" Click="BtnSubmit_Click" FontFamily="Consolas" FontSize="16" IsEnabled="True"/>
+
+
+
+
+    </Grid>
+</Window>
